@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFibonnaci(n) {
+        let a = (5 * Math.pow(n, 2) + 4);
+        let b = (5 * Math.pow(n, 2) - 4);
+        if (Math.sqrt(a) % 1 === 0 || Math.sqrt(b) % 1 === 0) {
+            return true
+        }
+        return false
+    }
+
+    let n = prompt('enter a number');
+    alert(isFibonnaci(n));
+
+</script>
+</body>
+</html>
